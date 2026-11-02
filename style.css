@@ -1,0 +1,79 @@
+/* 기본 색상과 공통 설정 */
+:root{--paper:#f8f4ef;--ink:#403b36;--muted:#8d837a;--line:#d9d0c7;--peach:#e9a996}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#eee8e1;color:var(--ink);font-family:'Noto Sans KR',sans-serif;font-weight:300;letter-spacing:.02em}
+button,a{font:inherit}
+a{color:inherit;text-decoration:none}
+.topbar{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;max-width:520px;margin:auto;padding:15px 22px;background:rgba(248,244,239,.94);backdrop-filter:blur(8px)}
+.brand{font-family:'Gowun Batang',serif;font-size:15px}
+nav{display:flex;gap:17px;font-size:9px;letter-spacing:.13em;color:#766e66}
+main{max-width:520px;margin:auto;background:var(--paper);box-shadow:0 0 35px #b8ada333}
+.section{padding:66px 28px;text-align:center}
+.hero{padding:65px 0 30px}
+.hero-copy{padding:0 20px 28px}
+.eyebrow{font-size:10px;letter-spacing:.2em;color:#9a8c7e;margin:0 0 16px}
+h1,h2,h3{font-family:'Gowun Batang',serif;font-weight:400}
+h1{font-size:25px;letter-spacing:.16em;margin:0 0 20px}
+h1 span{color:var(--peach);font-size:18px;margin:0 7px}
+.lead,.body-copy{font-family:'Gowun Batang',serif;font-size:13px;line-height:2;color:#81776f}
+.date{font-family:'Gowun Batang',serif;letter-spacing:.22em;margin:18px 0 0;font-size:14px}
+.photo-button{display:block;border:0;padding:0;background:none;cursor:zoom-in;overflow:hidden;width:100%}
+.photo-button img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.photo-button:active img{transform:scale(1.025)}
+.hero-photo{height:390px}
+.invitation{text-align:left;padding:35px 30px 15px;background:#fbf8f4}
+.script{font-family:cursive;font-style:italic;font-size:34px;margin:0 0 15px;color:#4c4640}
+.invitation p:last-child{font-family:'Gowun Batang',serif;font-size:12px;line-height:2.1;color:#746b63}
+.story{padding-top:65px}
+h2{font-size:23px;margin:0 0 18px}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:28px}
+.story-grid .photo-button{height:205px}
+.story-grid img{filter:saturate(.75)}
+.timeline{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font-family:'Gowun Batang',serif;font-size:12px;color:#746b63}
+.timeline i{width:5px;height:5px;border-radius:50%;background:#c6b8aa}
+.timeline small{font-size:10px}
+.gallery{padding-top:55px}
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:28px}
+.gallery-grid .photo-button{height:170px}
+.gallery-grid .wide{grid-column:span 2;height:240px}
+.gallery-hint{font-size:10px;color:#a49a91;margin-top:15px}
+.details{padding-top:58px}
+.info-list{text-align:left;margin:28px 0 22px;padding:20px 16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.info-item{display:flex;gap:17px;margin:12px 0;font-family:'Gowun Batang',serif;font-size:12px;line-height:1.9}
+.info-item b{font-weight:400}
+.info-item p{margin:3px 0;color:#7d746c}
+.info-icon{font-size:22px;width:25px;text-align:center}
+.hall-photo{height:210px;margin:22px 0 36px}
+.details h3{font-size:20px;margin:0 0 18px}
+.map-card{height:190px;background-color:#e8e6df;background-image:linear-gradient(28deg,transparent 47%,#fff 48%,#fff 51%,transparent 52%),linear-gradient(105deg,transparent 42%,#d6d1c7 43%,#d6d1c7 44%,transparent 45%),linear-gradient(0deg,transparent 48%,#fff 49%,#fff 52%,transparent 53%);background-size:95px 75px,120px 100px,100px 90px;display:grid;place-items:center}
+.map-placeholder{display:flex;flex-direction:column;align-items:center;gap:7px;font-size:12px}
+.map-pin{color:#c95e4d;font-size:25px;text-shadow:0 2px 2px #aaa}
+.map-placeholder small{font-size:10px;color:#81776f}
+.address{font-size:11px;color:#8c8279;margin:15px 0}
+.outline-button{display:inline-block;border:1px solid #bdb2a8;padding:12px 24px;font-size:11px;margin-top:6px}
+.account{padding-top:48px;padding-bottom:55px}
+.account-row{display:flex;justify-content:space-between;align-items:center;text-align:left;background:#f1ebe5;padding:15px;margin-top:9px;font-size:11px}
+.account-row b{font-weight:400}
+.account-row p{margin:7px 0 0;color:#827970;font-size:10px}
+.copy-button{border:1px solid #bdb2a8;background:transparent;padding:7px 12px;font-size:10px;cursor:pointer}
+.ending{position:relative;height:360px;overflow:hidden}
+.ending>img{width:100%;height:100%;object-fit:cover}
+.ending:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#f8e9df88,transparent 90%)}
+.ending-copy{position:absolute;z-index:1;top:35px;left:25px;text-align:left;color:#342e29}
+.ending-copy .script{font-size:29px}
+.ending-copy h2{font-size:22px;line-height:1.7}
+footer{max-width:520px;margin:auto;text-align:center;padding:24px;background:var(--paper);font-family:'Gowun Batang',serif;font-size:12px;color:#877d74}
+footer span{margin-left:12px;font-size:10px}
+.modal,.toast-modal{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;padding:22px;background:#171411e8}
+.modal.open,.toast-modal.open{display:flex}
+.modal-image{max-width:100%;max-height:85vh;object-fit:contain;box-shadow:0 8px 35px #0008}
+.modal-close{position:absolute;top:18px;right:22px;border:0;background:none;color:white;font-size:38px;cursor:pointer}
+.toast-modal{background:#211d19a8;z-index:30}
+.toast-box{width:min(310px,100%);padding:30px 22px;text-align:center;background:#fbf8f4;border-radius:3px}
+.check{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#e9e2d9;color:#71685f}
+.toast-box h3{font-size:20px;margin:14px 0 8px}
+.toast-box p{font-size:11px;color:#81776f;line-height:1.8}
+.toast-box button{margin-top:12px;padding:9px 28px;border:0;background:#5b5149;color:white;font-size:11px}
+@media(min-width:600px){body{padding:20px 0}.topbar{border-radius:14px 14px 0 0}main{border-radius:0 0 14px 14px;overflow:hidden}}
+@media(max-width:360px){nav{gap:10px;font-size:8px}.hero-photo{height:320px}.section{padding-left:20px;padding-right:20px}}
